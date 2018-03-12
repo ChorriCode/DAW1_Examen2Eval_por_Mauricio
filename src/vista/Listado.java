@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 public class Listado {
 
 	public static void mostrarAlumnosYNotas(String[] listadoAsignaturas, HashMap<String,ArrayList<String>> listadoAlumnosNotas) {
-		int indiceAsig;
+		int indiceAsig = 0;
 		System.out.print("\t\t\t");
 		for (int indiceAsignatura = 0; indiceAsignatura < listadoAsignaturas.length; indiceAsignatura++) {
 			System.out.print("\t" + listadoAsignaturas[indiceAsignatura]);
@@ -15,14 +15,19 @@ public class Listado {
 		}
 		//System.out.println();
 		for (Entry<String, ArrayList<String>> listadoNotas : listadoAlumnosNotas.entrySet()) {
-			indiceAsig = 0;
+
 			System.out.print("\n" + listadoNotas.getKey());
 			System.out.print("\t");
 			for (String unaNotaDeUnaAsignatura : listadoNotas.getValue()) {
-				
-				System.out.print(listadoAsignaturas[indiceAsig].length() > 6 ? "\t\t" + unaNotaDeUnaAsignatura : "\t" + unaNotaDeUnaAsignatura);
+				//La siguiente línea intento controlar un poco los tabuladores para que no me salgan muy descolocados
+				//los valoras, lo mejor hubiese sido cambiar la longitud de la palabra MATEMATICAS e HISTORIA pero
+				//no he querido tocar los datos originales del exámen, seguro había otra manero pero no se me ocurrio 
+				//en este momento
+				System.out.print(listadoAsignaturas[indiceAsig].length() >= 8 ? "\t\t" + unaNotaDeUnaAsignatura : "\t   " + unaNotaDeUnaAsignatura);
+				indiceAsig++;
 			}
 
+			indiceAsig = 0;
 		}
 	}
 	
