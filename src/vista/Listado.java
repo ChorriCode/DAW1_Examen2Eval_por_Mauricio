@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 public class Listado {
+	
+	
+	//************* objetivo 1 **************
 
 	public static void mostrarAlumnosYNotas(String[] listadoAsignaturas, HashMap<String,ArrayList<String>> listadoAlumnosNotas) {
 		int indiceAsig = 0;
@@ -31,6 +34,9 @@ public class Listado {
 		}
 	}
 	
+	
+	//************* objetivo 2  **************
+	
 	public static void notaMediaPorAlumno(HashMap<String,ArrayList<String>> listadoAlumnosNotas) {
 		System.out.println("\n*************** NOTAS MEDIA POR ALUMNOS **************");
 		for ( Entry<String, ArrayList<String>> alumnosNotas : listadoAlumnosNotas.entrySet()) {
@@ -44,6 +50,9 @@ public class Listado {
 			System.out.print("Nota Media del Alumno " + alumnosNotas.getKey() + " es: \t" +  notaMedia);
 		}
 	}
+	
+	
+	//************* objetivo 3 **************
 	
 	public static void notaMediaPorAsignatura(String[] listadoAsignaturas, HashMap<String,ArrayList<String>> listadoAlumnosNotas) {
 		System.out.println("\n*************** NOTAS MEDIA POR ASIGNATURA **************");

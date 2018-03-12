@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 public class Datos {
 
+	//************* necesario para cumplir los objetivos 1 y 3 **************
 	
 	public static String[] leerFicheroTxtConAsignaturas(String rutaFichero) {
 		String[] listaAsignaturas = null;
@@ -26,6 +27,8 @@ public class Datos {
 		}
 		return listaAsignaturas;
 	}
+	
+	//************* necesario para cumplir los 3 objetivos **************
 	
 	public static HashMap<String,ArrayList<String>> leerFicheroAlumnosNotas(String rutaFichero){
 		HashMap<String,ArrayList<String>> resultado = new HashMap<String,ArrayList<String>>();
