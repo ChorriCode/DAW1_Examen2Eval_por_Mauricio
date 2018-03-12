@@ -12,6 +12,8 @@ public class Principal {
 		String[] listadoAsignaturas = Datos.leerFicheroTxtConAsignaturas("ficheros/asignaturas.txt");
 		HashMap<String, ArrayList<String>> listadoAlumnosNotas = Datos.leerFicheroAlumnosNotas("ficheros/notasAlumnos.txt");
 		Listado.mostrarAlumnosYNotas(listadoAsignaturas, listadoAlumnosNotas);
+		
+		Listado.notaMediaPorAlumno(listadoAlumnosNotas);
 	}
 
 }

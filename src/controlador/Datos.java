@@ -38,11 +38,8 @@ public class Datos {
 				String[] datos = strLine.split("#");
 				String nombreAlumno = datos[0];
 				String[] notasAlumno = datos[1].split(",");
-				
-				System.out.println(nombreAlumno);
-				
-				for (int indiceNotas = 0; indiceNotas < notasAlumno.length; indiceNotas++) {
-					ArrayList<String> listadoNotas = new ArrayList<String>();
+				ArrayList<String> listadoNotas = new ArrayList<String>();
+				for (int indiceNotas = 0; indiceNotas < notasAlumno.length; indiceNotas++) {				
 					listadoNotas.add(notasAlumno[indiceNotas]);
 					resultado.put(nombreAlumno, listadoNotas);
 				}
