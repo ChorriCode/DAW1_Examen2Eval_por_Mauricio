@@ -20,6 +20,7 @@ public class Principal {
 		
 		//************* objetivo 3 **************
 		Listado.notaMediaPorAsignatura(listadoAsignaturas,listadoAlumnosNotas);
+
 	}
 
 }

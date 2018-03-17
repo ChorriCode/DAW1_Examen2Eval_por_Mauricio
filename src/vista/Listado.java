@@ -26,6 +26,7 @@ public class Listado {
 				//los valoras, lo mejor hubiese sido cambiar la longitud de la palabra MATEMATICAS e HISTORIA pero
 				//no he querido tocar los datos originales del exámen, seguro había otra manero pero no se me ocurrio 
 				//en este momento
+
 				System.out.print(listadoAsignaturas[indiceAsig].length() >= 8 ? "\t\t" + unaNotaDeUnaAsignatura : "\t   " + unaNotaDeUnaAsignatura);
 				indiceAsig++;
 			}

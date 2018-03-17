@@ -36,7 +36,6 @@ public class Datos {
 			FileReader fr = new FileReader(rutaFichero);
 			BufferedReader br = new BufferedReader(fr);
 			String strLine;
-
 			while ((strLine = br.readLine()) != null) {
 				String[] datos = strLine.split("#");
 				String nombreAlumno = datos[0];
@@ -45,10 +44,8 @@ public class Datos {
 				for (int indiceNotas = 0; indiceNotas < notasAlumno.length; indiceNotas++) {				
 					listadoNotas.add(notasAlumno[indiceNotas]);
 					resultado.put(nombreAlumno, listadoNotas);
-				}
-				
+				}				
 			}
-
 			fr.close();
 			br.close();
 		} catch (Exception e) {// Catch exception if any
