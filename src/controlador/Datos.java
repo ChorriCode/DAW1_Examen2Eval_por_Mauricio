@@ -43,8 +43,9 @@ public class Datos {
 				ArrayList<String> listadoNotas = new ArrayList<String>();
 				for (int indiceNotas = 0; indiceNotas < notasAlumno.length; indiceNotas++) {				
 					listadoNotas.add(notasAlumno[indiceNotas]);
-					resultado.put(nombreAlumno, listadoNotas);
-				}				
+					
+				}	
+				resultado.put(nombreAlumno, listadoNotas);
 			}
 			fr.close();
 			br.close();
